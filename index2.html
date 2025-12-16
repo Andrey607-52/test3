@@ -22,7 +22,7 @@
         </div>
 
         <div class='main_bar'>
-            <div class='poisk' id='poisk'>
+            <div class='poisk'>
                 <input class='note_input' type='text' 
                        placeholder='Поиск' 
                        id='search'>
@@ -31,27 +31,24 @@
             </div>
 
             <div class='notes_container'>
-                <div class='list' id='list'></div>
+                <div id='list'></div>
             </div>
         </div>
     </div>
 
-    <div class='overlay' id='overlay'>
-        <div class='modal_window' id='modal_window'>
-            <div class='modal_content' id='modal_content'>
-                <button class='modal_close' id='modal_close'>×</button>
-                <span class='modal_title' id='modal_title'>Редактирование заметки</span>
-                <form class='modal_form' id='modal-form'>
-                    <input class='modal_input' id='modal__input' 
-                           placeholder='Название заметки'>
-                    <select class='modal_dropdown' id='modal__select'>
-                    </select>
-                    <div class='modal_buttons'>
-                        <button type='button' class='modal_button' 
-                                id='modal-save'>Сохранить</button>
-                    </div>
-                </form>
-            </div>
+    <div class='modal_window' id='overlay'>
+        <div class='modal_content'>
+            <button class='modal_close' id='modal_close'>×</button>
+            <span class='modal_title'>Редактирование заметки</span>
+            <form id='modal-form'>
+                <input class='modal_input' id='modal__input' 
+                       placeholder='Название заметки'>
+                <select class='modal_dropdown' id='modal__select'></select>
+                <div class='modal_buttons'>
+                    <button type='button' class='modal_button' 
+                            id='modal-save'>Сохранить</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
